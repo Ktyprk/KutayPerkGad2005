@@ -54,6 +54,7 @@ public class UIManager : MonoBehaviour
 
     public void StartGame()
     {
+        player.speed = 0.30f;
         player.GetComponent<Animator>().SetBool("Running", true);
         player.tapToStart = true;
         player.transform.GetChild(1).Rotate(new Vector3(0, 180, 0));

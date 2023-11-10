@@ -14,7 +14,6 @@ public class CharacterMovement : MonoBehaviour
     {
         if (tapToStart == true)
         {
-            speed = 0.30f;
             transform.Translate(Vector3.forward * speed);
         }       
     }
@@ -54,9 +53,6 @@ public class CharacterMovement : MonoBehaviour
             Destroy(other.gameObject);
         }
 
-        if(other.gameObject.tag == "FinishLine")
-        {
-            Debug.Log("aaaaa");
-        }
+       
     }
 }
